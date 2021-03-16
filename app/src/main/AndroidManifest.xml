@@ -15,6 +15,18 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+            <intent-filter android:label="QQ Jane">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- Accepts URIs that begin with "http://www.example.com/gizmos” -->
+                <data android:scheme="myscheme"
+                      android:host="bin.bin.jane"
+                      android:pathPrefix="/skin_cry_cry" />
+                <!-- note that the leading "/" is required for pathPrefix-->
+            </intent-filter>
+
         </activity>
     </application>
 
